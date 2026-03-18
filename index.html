@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>张颖格 - 个人主页</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #1e1e1e;
+            color: #d4d4d4;
+            line-height: 1.6;
+        }
+        /* 导航栏 */
+        nav {
+            background-color: #455a7a;
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+        nav .brand {
+            color: white;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        nav .search {
+            margin-left: auto;
+            color: white;
+            font-size: 1.2rem;
+        }
+        /* 主容器 */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+        /* 左侧头像区域 */
+        .left-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+        }
+        .avatar {
+            width: 280px;
+            height: 280px;
+            border-radius: 4px;
+            object-fit: cover;
+            background-color: #2d2d2d;
+        }
+        .name-title {
+            font-size: 1.8rem;
+            color: white;
+            font-weight: 600;
+        }
+        .contact-buttons {
+            display: flex;
+            gap: 0.8rem;
+        }
+        .contact-buttons button {
+            background-color: #2d2d2d;
+            color: #d4d4d4;
+            border: 1px solid #455a7a;
+            padding: 0.4rem 0.8rem;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        /* 右侧内容区域 */
+        .right-section {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        .section-title {
+            color: white;
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .divider {
+            border-bottom: 1px solid #455a7a;
+            margin: 0.8rem 0;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        /* 页脚 */
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            color: #888;
+            font-size: 0.9rem;
+            border-top: 1px solid #2d2d2d;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav>
+        <div class="brand">张颖格</div>
+        <a href="index.html">首页</a>
+        <a href="about.html">关于我</a>
+        <div class="search">🔍</div>
+    </nav>
+
+    <!-- 主内容区 -->
+    <div class="container">
+        <!-- 左侧：头像和名称 -->
+        <div class="left-section">
+            <img src="https://picsum.photos/seed/zhangyingge/280/280" alt="张颖格头像" class="avatar">
+            <div class="name-title">About Me</div>
+            <div class="contact-buttons">
+                <button>✉️ Email</button>
+                <button>💬 QQ</button>
+            </div>
+        </div>
+
+        <!-- 右侧：个人档案 -->
+        <div class="right-section">
+            <div>
+                <h2 class="section-title">个人档案</h2>
+                <div class="divider"></div>
+                <ul>
+                    <li><strong>姓名</strong>: 张颖格</li>
+                    <li><strong>学号</strong>: 2025303120025</li>
+                    <li><strong>学校</strong>: 华中农业大学</li>
+                    <li><strong>专业</strong>: 环境工程（硕士）</li>
+                </ul>
+            </div>
+
+            <div>
+                <h2 class="section-title">🎓 教育背景 (Education)</h2>
+                <div class="divider"></div>
+                <p>华中农业大学 (HZAU) | 武汉, 中国</p>
+                <p>资源与环境学院 | 硕士研究生 | 2025.09 - 至今</p>
+            </div>
+
+            <div>
+                <h2 class="section-title">🔬 研究方向 (Research)</h2>
+                <div class="divider"></div>
+                <ul>
+                    <li>土壤复合污染治理</li>
+                    <li>土壤重金属-有机污染物复合污染的界面行为</li>
+                    <li>新型原位修复材料的研发与应用</li>
+                    <li>土壤复合污染修复效果的评估与风险管控</li>
+                </ul>
+            </div>
+
+            <div>
+                <h2 class="section-title">🛠️ 建站技术栈 (Tools)</h2>
+                <div class="divider"></div>
+                <ul>
+                    <li>Quarto: 科学技术出版系统</li>
+                    <li>HTML/CSS: 页面结构与样式</li>
+                    <li>Markdown: 结构化内容编写</li>
+                    <li>GitHub Pages: 网站托管</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer>
+        © 2025 张颖格 | 环境工程硕士在读 | 华中农业大学
+    </footer>
+</body>
+</html>
